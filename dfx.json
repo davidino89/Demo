@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Digital_Garage_backend": {
+      "main": "src/Digital_Garage_backend/main.mo",
+      "type": "motoko"
+    },
+    "Digital_Garage_frontend": {
+      "dependencies": [
+        "Digital_Garage_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Digital_Garage_frontend/src/index.html"
+      },
+      "source": [
+        "src/Digital_Garage_frontend/assets",
+        "dist/Digital_Garage_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

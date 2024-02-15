@@ -1,0 +1,10 @@
+type Vehicle = 
+ record {
+   licenseNumber: text;
+   model: text;
+   vehicleIdentificationNumber: text;
+ };
+service : {
+  addVehicle: (text, text, text) -> () oneway;
+  readVehicles: () -> (vec Vehicle) query;
+}
